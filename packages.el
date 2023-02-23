@@ -72,4 +72,5 @@
 (package! impatient-mode)
 
 (package! wren-mode
-  :recipe (:host github :repo "4d47/wren-mode.el"))
+  :recipe (:host github :repo "4d47/wren-mode.el"
+           :files ("wren-mode.el" "flycheck-wren.el")))

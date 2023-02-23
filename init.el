@@ -86,6 +86,7 @@
        ;;grammar             ; tasing grammar mistake every you make
 
        :tools
+       tree-sitter
        ;;ansible           ; a crucible for infrastructure as code
        debugger          ; FIXME stepping through code, to help you add bugs
        ;;direnv            ; be direct about your environment
@@ -187,7 +188,7 @@
        :app
        ;;calendar
        ;;emms
-       everywhere        ; *leave* Emacs!? You must be joking
+       ;;everywhere        ; *leave* Emacs!? You must be joking
        ;;irc               ; how neckbeards socialize
        (rss +org)        ; emacs as an RSS reader
        ;;twitter           ; twitter client https://twitter.com/vnought

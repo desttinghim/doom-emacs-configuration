@@ -46,7 +46,7 @@
   :hook (sql-mode sql-interactive-mode))
 
 ;; Tell projectile the default search path for projects
-(setq projectile-project-search-path '("~/repos/"))
+(setq projectile-project-search-path '("~/Code/"))
 
 ;; elfeed configuration
 (after! elfeed
@@ -61,23 +61,6 @@
         org-msg-signature "#+begin_signature\n-- Louis Pearson\n#+end_signature"))
 
 (doom-load-envvars-file "~/.config/emacs/.local/env")
-
-;; (use-package! 'generic-x
-;;   (define-generic-mode
-;;       'dialogc-mode                     ;; name of the mode to create
-;;     '("%%")                             ;; comments start with %%
-;;     nil                                 ;; some keywords
-;;     '(("#\\w+?\\b" . 'font-lock-constant-face)
-;;       ("$\\w*?\\b" . 'font-lock-variable-name-face)
-;;       ("~" . 'font-lock-negation-char-face)
-;;       ("(\\(?:\\(?:[$#]\\w+\\)\\|\\([[:alnum:]-+_]+\\)\\|\\(\\*\\)\\|\\(?: \\)\\)+)"
-;;        (1 'font-lock-function-name-face)
-;;        (2 'font-lock-preprocessor-face))
-;;       )
-;;     '("\\.dg$")                         ;; files for which to activate this mode
-;;     nil                                 ;; other functions to call
-;;     "Major mode for editing dialogc story files"    ;; doc string for mode
-;;     ))
 
 (load! "dialog.el")
 (load! "jasmin.el")
@@ -97,20 +80,5 @@
         '("\\.n3" . ttl-mode)
         '("\\.ttl" . ttl-mode))
        auto-mode-alist))
-
-;; (use-package! zig-mode
-;;   :hook ((zig-mode . lsp-deferred))
-;;   :custom (zig-format-on-save nil)
-;;   :config
-;;   (after! lsp-mode
-;;     (add-to-list 'lsp-language-id-configuration '(zig-mode . "zig"))
-;;     (lsp-register-client
-;;       (make-lsp-client
-;;         :new-connection (lsp-stdio-connection "<path to zls>")
-;;         :major-modes '(zig-mode)
-;;         :server-id 'zls))))
-
-;; (setq lsp-zig-zls-executable "~/.local/bin/zls")
-;; (setq zig-zig-bin "~/.local/bin/zig")
 
 (add-hook! 'prog-mode-hook 'sourcegraph-mode)

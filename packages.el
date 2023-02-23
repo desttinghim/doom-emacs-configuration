@@ -70,3 +70,6 @@
 (package! arduino-cli-mode)
 
 (package! impatient-mode)
+
+(package! wren-mode
+  :recipe (:host github :repo "4d47/wren-mode.el"))

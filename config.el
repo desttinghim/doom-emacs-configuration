@@ -84,4 +84,4 @@
 (add-hook! 'prog-mode-hook 'sourcegraph-mode)
 
 (use-package! wren-mode
-  :mode '("\\.wren" . wren-mode))
+  :mode ("\\.wren" . 'wren-mode))

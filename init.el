@@ -128,9 +128,9 @@
        data                ; config/data formats
        ;;(dart +flutter)   ; paint ui and not much else
        ;;dhall
-       ;;elixir            ; erlang done right
+       elixir              ; erlang done right
        emacs-lisp          ; drown in parentheses
-       ;;erlang            ; an elegant language for a more civilized age
+       erlang              ; an elegant language for a more civilized age
        ;;ess               ; emacs speaks statistics
        ;;factor
        faust               ; dsp, but you get to keep your soul
@@ -145,15 +145,15 @@
        ;;(java +meghanada) ; the poster child for carpal tunnel syndrome
        (javascript +lsp)   ; all(hope(abandon(ye(who(enter(here))))))
        ;;julia             ; a better, faster MATLAB
-       ;;kotlin            ; a better, slicker Java(Script)
+       kotlin              ; a better, slicker Java(Script)
        ;;latex             ; writing papers in Emacs has never been so fun
        ;;lean              ; for folks with too much to prove
        ;;ledger            ; be audit you can be
        lua                 ; one-based indices? one-based indices
        markdown            ; writing docs for people to ignore
-       ;;nim               ; python + lisp at the speed of c
+       nim                 ; python + lisp at the speed of c
        nix                 ; I hereby declare "nix geht mehr!"
-       ;;ocaml             ; an objective camel
+       ocaml               ; an objective camel
        (org                ; organize your plain life in plain text
         +roam2             ; Zettelkasten note taking
         +journal           ;

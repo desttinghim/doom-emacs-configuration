@@ -64,11 +64,14 @@
 
 (load! "dialog.el")
 (load! "jasmin.el")
+(load! "vala-mode.el")
 
 (setq org-latex-compiler "lualatex")
 (setq org-preview-latex-default-process 'dvisvgm)
 
-(setq dash-docs-docsets-path "~/.local/share/Zeal/Zeal/docsets")
+(use-package! dash-docs
+  :config
+  (setq dash-docs-docsets-path "~/.local/share/Zeal/Zeal/docsets"))
 
 ;; Turtle mode (for making LV2 plugins)
 (autoload 'ttl-mode "ttl-mode" "Major mode for OWL or Turtle files" t)

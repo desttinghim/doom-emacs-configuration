@@ -57,6 +57,7 @@
 (package! emacsql-sqlite)
 (package! ttl-mode)
 (package! d-mode)
+(package! uxntal-mode)
 
 ;; Matrix in emacs! Can't seem to get my password to work for some reason.
 (package! plz
